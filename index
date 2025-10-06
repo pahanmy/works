@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Aplikasi Anda - Pembangun Laman Web & Aplikasi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg {
+            background-color: #1a202c;
+            background-image: radial-gradient(circle at 50% 0, rgba(12, 74, 110, 0.5) 0%, rgba(12, 74, 110, 0) 50%);
+        }
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <!-- Header -->
+    <header class="bg-gray-900/80 backdrop-blur-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-white">Portfolio Saya</h1>
+            <nav>
+                <a href="#apps" class="text-gray-300 hover:text-white px-3 py-2 rounded-md">Aplikasi</a>
+                <a href="#contact" class="bg-sky-600 hover:bg-sky-700 text-white font-medium px-4 py-2 rounded-lg transition-colors">Hubungi Saya</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="hero-bg py-20 sm:py-32">
+            <div class="container mx-auto px-6 flex flex-col-reverse md:flex-row items-center gap-12">
+                <div class="md:w-3/5 text-center md:text-left">
+                    <h2 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight">Mengubah Idea Menjadi Aplikasi Hebat</h2>
+                    <p class="mt-4 text-lg md:text-xl max-w-2xl mx-auto md:mx-0 text-gray-300">
+                        Saya membina aplikasi web dan mudah alih yang moden, responsif, dan mesra pengguna. Lihat hasil kerja saya di bawah dan mari bekerjasama untuk projek anda yang seterusnya.
+                    </p>
+                    <div class="mt-8">
+                        <a href="#apps" class="bg-sky-600 hover:bg-sky-700 text-white font-bold py-3 px-8 rounded-full text-lg transition-transform transform hover:scale-105">Lihat Portfolio</a>
+                    </div>
+                </div>
+                <div class="md:w-2/5 flex justify-center">
+                     <img src="https://i.imgur.com/aLS72rw.png" 
+                         alt="Gambar profil Pahan" 
+                         class="w-48 h-48 md:w-64 md:h-64 rounded-full border-4 border-sky-600 shadow-lg object-cover"
+                         style="object-position: center top;">
+                </div>
+            </div>
+        </section>
+
+        <!-- Apps Gallery Section -->
+        <section id="apps" class="py-20 bg-gray-900">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h3 class="text-3xl sm:text-4xl font-bold text-white">Hasil Kerja Saya</h3>
+                    <p class="text-gray-400 mt-2">Berikut adalah beberapa aplikasi yang telah saya bangunkan.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <!-- App Thumbnail: SPARK -->
+                    <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg transition-all duration-300 card-hover">
+                        <img src="https://i.imgur.com/MEXwinF.png" alt="Imej Aplikasi SPARK" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h4 class="text-xl font-bold text-white">SPARK</h4>
+                            <p class="text-gray-400 mt-2 mb-4">Percikan Inovasi Kehadiran Digital. Projek Inovasi oleh Pahan | ICT & Sektor Pengurusan, PPD Miri.</p>
+                            <a href="https://pahanmy.github.io/myqr/" target="_blank" rel="noopener noreferrer" class="inline-block text-sky-400 hover:text-sky-300 font-semibold">Lawati Projek &rarr;</a>
+                        </div>
+                    </div>
+
+                    <!-- App Thumbnail: myPKMM -->
+                    <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg transition-all duration-300 card-hover">
+                        <img src="https://i.imgur.com/f7mrdRY.png" alt="Imej Aplikasi myPKMM" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h4 class="text-xl font-bold text-white">myPKMM - Dashboard Semakan Murid</h4>
+                            <p class="text-gray-400 mt-2 mb-4">Dashboard Semakan Pindah Keluar Masuk Murid untuk Pejabat Pendidikan Daerah Miri.</p>
+                            <a href="https://mypkmm.netlify.app/" target="_blank" rel="noopener noreferrer" class="inline-block text-sky-400 hover:text-sky-300 font-semibold">Lawati Laman Web &rarr;</a>
+                        </div>
+                    </div>
+
+                    <!-- App Thumbnail: myOPR -->
+                    <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg transition-all duration-300 card-hover">
+                        <img src="https://i.imgur.com/f7mrdRY.png" alt="Imej Aplikasi myOPR" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h4 class="text-xl font-bold text-white">myOPR - Penjana Laporan OPR</h4>
+                            <p class="text-gray-400 mt-2 mb-4">Cipta Laporan Satu Halaman (OPR) profesional dalam 15 saat dengan bantuan AI.</p>
+                            <a href="https://pahanmy.github.io/myopr/" target="_blank" rel="noopener noreferrer" class="inline-block text-sky-400 hover:text-sky-300 font-semibold">Cuba Guna AI &rarr;</a>
+                        </div>
+                    </div>
+                    
+                    <!-- App Thumbnail: PERGERAKAN JTK -->
+                     <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg transition-all duration-300 card-hover">
+                        <img src="https://i.imgur.com/f7mrdRY.png" alt="Imej Aplikasi Pergerakan JTK" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h4 class="text-xl font-bold text-white">PERGERAKAN JTK</h4>
+                            <p class="text-gray-400 mt-2 mb-4">Sistem pemantauan Pergerakan Pasukan Teknikal ICT Sekolah untuk Pejabat Pendidikan Daerah Miri.</p>
+                            <a href="https://pahanmy.github.io/pergerakanjtk/" target="_blank" rel="noopener noreferrer" class="inline-block text-sky-400 hover:text-sky-300 font-semibold">Lihat Pergerakan &rarr;</a>
+                        </div>
+                    </div>
+
+                     <!-- App Thumbnail: myutiliti -->
+                     <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg transition-all duration-300 card-hover">
+                        <img src="https://i.imgur.com/238aEBV.png" alt="Imej Aplikasi myutiliti" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h4 class="text-xl font-bold text-white">myutiliti - Pengurusan Bil Utiliti</h4>
+                            <p class="text-gray-400 mt-2 mb-4">Sistem Pengurusan Bil Utiliti untuk sekolah-sekolah Daerah Miri. Projek inovasi oleh Unit ICT.</p>
+                            <a href="https://pahanmy.github.io/myutiliti/" target="_blank" rel="noopener noreferrer" class="inline-block text-sky-400 hover:text-sky-300 font-semibold">Lihat Sistem &rarr;</a>
+                        </div>
+                    </div>
+
+                     <!-- App Thumbnail: mySTS -->
+                     <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg transition-all duration-300 card-hover">
+                        <img src="https://i.imgur.com/0hW3vi3.png" alt="Imej Aplikasi Sukan Tahunan Sekolah" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h4 class="text-xl font-bold text-white">SUKAN TAHUNAN SEKOLAH (mySTS)</h4>
+                            <p class="text-gray-400 mt-2 mb-4">Sistem pengurusan lengkap untuk Sukan Tahunan Sekolah, dari pendaftaran hingga paparan markah langsung.</p>
+                            <a href="https://pahanmy.github.io/sukan-tahunan-sekolah/" target="_blank" rel="noopener noreferrer" class="inline-block text-sky-400 hover:text-sky-300 font-semibold">Lawati Sistem &rarr;</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-gray-900/50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h3 class="text-3xl sm:text-4xl font-bold text-white">Berminat Untuk Bekerjasama?</h3>
+                    <p class="text-gray-400 mt-2">Hantarkan mesej melalui borang di bawah atau hubungi saya terus di Telegram.</p>
+                </div>
+                <div class="max-w-2xl mx-auto bg-gray-800 p-8 rounded-xl shadow-2xl">
+                    <form action="#" method="POST">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-300 mb-2">Nama Anda</label>
+                                <input type="text" id="name" name="name" class="w-full bg-gray-700 text-white rounded-lg border-gray-600 focus:ring-sky-500 focus:border-sky-500 p-3" placeholder="John Doe" required>
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-300 mb-2">Alamat E-mel</label>
+                                <input type="email" id="email" name="email" class="w-full bg-gamma-700 text-white rounded-lg border-gray-600 focus:ring-sky-500 focus:border-sky-500 p-3" placeholder="anda@emel.com" required>
+                            </div>
+                        </div>
+                        <div class="mt-6">
+                            <label for="message" class="block text-sm font-medium text-gray-300 mb-2">Mesej Anda</label>
+                            <textarea id="message" name="message" rows="5" class="w-full bg-gray-700 text-white rounded-lg border-gray-600 focus:ring-sky-500 focus:border-sky-500 p-3" placeholder="Terangkan tentang projek atau idea anda..." required></textarea>
+                        </div>
+                        <div class="mt-8 text-center">
+                            <button type="submit" class="w-full md:w-auto bg-sky-600 hover:bg-sky-700 text-white font-bold py-3 px-12 rounded-full text-lg transition-colors">
+                                Hantar Mesej
+                            </button>
+                        </div>
+                    </form>
+                    <div class="text-center mt-6">
+                        <span class="text-gray-400">atau</span>
+                        <a href="https://t.me/mypahan" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 mt-2 text-sky-400 hover:text-sky-300 font-semibold transition-colors">
+                            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-1.37.2-1.64l16.4-6.2c.85-.32 1.63.24 1.38 1.43l-4.13 19.11c-.24 1.15-1.02 1.41-1.74.88L9.78 18.65z"></path></svg>
+                            Hubungi Saya di Telegram
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-500">
+            <p>&copy; 2024 Pahan. Hak Cipta Terpelihara.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
